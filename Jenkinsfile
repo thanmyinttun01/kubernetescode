@@ -12,13 +12,6 @@ node {
        app = docker.build("02042025/dockerhub")
     }
     
-    stage('Test image') {
-  
-
-        app.inside {
-            sh 'echo "Tests passed"'
-        }
-    }
 
     stage('Push image') {
         
